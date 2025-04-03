@@ -1,6 +1,6 @@
 import { ButtonContents } from '@payloadcms/ui/elements/Button'
 import React from 'react'
-import { withSafeLinks } from '../../../storybook/mockComponentWrappers'
+import { withSafeLinks } from '../../../.storybook/mockComponentWrappers'
 
 // Use wrapper to ensure links have href props
 const SafeButtonContents = withSafeLinks(ButtonContents)

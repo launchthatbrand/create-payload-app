@@ -1,5 +1,8 @@
 import path from 'path'
 
+// Vercel build check - if you see this in logs, the file is being read
+console.log('Storybook main.js configuration loading...')
+
 /** @type { import('@storybook/nextjs').StorybookConfig } */
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
