@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../src/providers/RouteCache/index.tsx"],"names":[],"mappings":"AAGA,OAAO,KAAqD,MAAM,OAAO,CAAA;AAEzE,MAAM,MAAM,iBAAiB,GAAG;IAC9B,eAAe,EAAE,MAAM,IAAI,CAAA;CAC5B,CAAA;AAMD,eAAO,MAAM,UAAU,EAAE,KAAK,CAAC,EAAE,CAAC;IAAE,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAA;CAAE,CAa9D,CAAA;AAED,eAAO,MAAM,aAAa,yBAAqB,CAAA"}
