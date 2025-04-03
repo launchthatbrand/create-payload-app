@@ -1,6 +1,6 @@
 import { Card } from '@payloadcms/ui/elements/Card'
 import React from 'react'
-import { withSafeLinks } from '../../../.storybook/mockComponentWrappers'
+import { withSafeLinks } from '../../../storybook/mockComponentWrappers'
 
 // Use our wrapper to ensure links have href props
 const SafeCard = withSafeLinks(Card)
