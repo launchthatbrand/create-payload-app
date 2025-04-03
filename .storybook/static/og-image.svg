@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FFFFFF" />
+  
+  <!-- Blue accent bar -->
+  <rect width="1200" height="8" y="0" fill="#0066FF" />
+  
+  <!-- Logo and Text Container -->
+  <g transform="translate(120, 160)">
+    <!-- Logo -->
+    <g transform="translate(0, 0)">
+      <text font-family="'Inter', -apple-system, sans-serif" font-weight="700" font-size="72" fill="#0066FF">Payload</text>
+      <text font-family="'Inter', -apple-system, sans-serif" font-weight="700" font-size="72" x="270" fill="#333333">.Directory</text>
+    </g>
+    
+    <!-- Tagline -->
+    <text font-family="'Inter', -apple-system, sans-serif" font-weight="500" font-size="36" y="100" fill="#666666">Component Documentation</text>
+    
+    <!-- Description -->
+    <text font-family="'Inter', -apple-system, sans-serif" font-weight="400" font-size="24" y="170" fill="#333333">Explore the building blocks of the PayloadCMS UI</text>
+  </g>
+  
+  <!-- Visual elements -->
+  <g transform="translate(900, 450)">
+    <!-- Stylized UI component illustrations -->
+    <rect width="120" height="40" rx="4" fill="#F3F3F3" stroke="#E5E5E5" stroke-width="1" />
+    <rect width="120" height="40" rx="4" y="50" fill="#F3F3F3" stroke="#E5E5E5" stroke-width="1" />
+    <rect width="120" height="40" rx="4" y="100" fill="#0066FF" stroke="#0055EE" stroke-width="1" />
+  </g>
+  
+  <!-- Bottom URL -->
+  <text font-family="'Inter', -apple-system, sans-serif" font-weight="400" font-size="20" x="120" y="580" fill="#666666">docs.payloadcms.directory</text>
+</svg> 

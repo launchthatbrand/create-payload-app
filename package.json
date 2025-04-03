@@ -18,7 +18,7 @@
     "reinstall": "cross-env NODE_OPTIONS=--no-deprecation rm -rf node_modules && rm pnpm-lock.yaml && pnpm --ignore-workspace install",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "storybook": "cross-env NODE_OPTIONS=--no-deprecation storybook dev -p 6006",
-    "build-storybook": "storybook build --config-dir .storybook",
+    "build-storybook": "NODE_OPTIONS=--no-deprecation storybook build -c .storybook && node scripts/convert-og-images.cjs",
     "generate-stories": "cross-env NODE_OPTIONS=--no-deprecation node scripts/generate-all-stories.js",
     "generate-stories:js": "cross-env NODE_OPTIONS=--no-deprecation node scripts/generate-all-stories.js",
     "generate-stories:sh": "./scripts/generate-all-stories.sh",
@@ -27,7 +27,8 @@
     "fix-story-ids": "cross-env NODE_OPTIONS=--no-deprecation node scripts/fix-story-ids.cjs",
     "fix-story-components": "cross-env NODE_OPTIONS=--no-deprecation node scripts/fix-story-components.cjs",
     "fix-story-syntax": "cross-env NODE_OPTIONS=--no-deprecation node scripts/fix-story-syntax.cjs",
-    "debug-css": "node scripts/debug-css-loading.cjs"
+    "debug-css": "node scripts/debug-css-loading.cjs",
+    "convert-og-images": "node scripts/convert-og-images.cjs"
   },
   "dependencies": {
     "@payloadcms/admin-bar": "latest",

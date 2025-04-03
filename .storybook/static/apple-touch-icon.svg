@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#FFFFFF" />
+  
+  <!-- Logo -->
+  <text x="24" y="100" font-family="'Inter', -apple-system, sans-serif" font-weight="700" font-size="32" fill="#0066FF">Payload</text>
+  <text x="48" y="130" font-family="'Inter', -apple-system, sans-serif" font-weight="700" font-size="20" fill="#333333">.Directory</text>
+</svg> 

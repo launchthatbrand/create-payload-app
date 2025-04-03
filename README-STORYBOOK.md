@@ -33,6 +33,32 @@ To modify the branding:
 2. Update the theme colors in `.storybook/manager.js`
 3. Modify the page title in `.storybook/preview-head.html`
 
+### Social Media Sharing & Open Graph
+
+The documentation site includes custom Open Graph (OG) meta tags to create visually appealing share previews when shared on social media platforms:
+
+1. **OG Image Sources**:
+
+   - SVG sources are in `.storybook/static/`:
+     - `og-image.svg` - Main OG image for social sharing
+     - `apple-touch-icon.svg` - Icon for iOS home screen bookmarks
+
+2. **PNG conversion**:
+
+   - PNG versions are automatically generated during build process
+   - Manual conversion: `pnpm convert-og-images`
+   - Uses the Sharp library for high-quality image conversion
+
+3. **Meta Tags Location**:
+
+   - `.storybook/preview-head.html` - OG tags for stories/docs pages
+   - `.storybook/manager-head.html` - OG tags for manager UI
+
+4. **Customizing OG Images**:
+   - Edit the SVG source files in `.storybook/static/`
+   - Run `pnpm convert-og-images` to generate PNG versions
+   - The build process will automatically include converted images
+
 ## Deployment to Vercel
 
 When deploying to Vercel, make sure to:
