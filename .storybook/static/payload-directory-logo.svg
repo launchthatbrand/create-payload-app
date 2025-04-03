@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <style>
+    .text { font-family: 'Inter', -apple-system, sans-serif; font-weight: 600; }
+    .payload { fill: #0066FF; }
+    .directory { fill: #333333; }
+  </style>
+  <text x="10" y="25" class="text payload">Payload</text>
+  <text x="80" y="25" class="text directory">.Directory</text>
+  <text x="10" y="35" class="text" font-size="10" fill="#666666">Component Documentation</text>
+</svg> 

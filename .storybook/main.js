@@ -22,6 +22,8 @@ const config = {
   staticDirs: [
     // Serve the PayloadCMS UI styles directory as a static directory
     { from: '../node_modules/@payloadcms/ui/dist', to: '/payloadcms-ui' },
+    // Add a static directory for custom assets like logos
+    { from: './static', to: '/' },
   ],
   webpackFinal: async (config) => {
     // Simplified CSS handling for PayloadCMS UI
