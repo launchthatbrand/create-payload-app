@@ -1,0 +1,26 @@
+<!-- Add PayloadCMS classes to the preview iframe body -->
+<script>
+  ;(function addPayloadClasses() {
+    // Wait for the document to fully load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', addClasses)
+    } else {
+      addClasses()
+    }
+
+    function addClasses() {
+      // Add the payload class to the html element
+      if (document.documentElement && !document.documentElement.classList.contains('payload')) {
+        document.documentElement.classList.add('payload')
+      }
+
+      // Add payload classes to the body element
+      if (document.body) {
+        document.body.classList.add('payload__body')
+      }
+
+      // Log that the classes were added
+      console.log('PayloadCMS classes added to preview document')
+    }
+  })()
+</script>

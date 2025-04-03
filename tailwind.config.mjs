@@ -1,13 +1,22 @@
+
+function getShadcnContent() {
+  return [
+    './src/app/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@payloadcmsdirectory/shadcn-ui/dist/**/*.{js,ts,jsx,tsx}',
+  ];
+}
 import tailwindcssAnimate from 'tailwindcss-animate'
 import typography from '@tailwindcss/typography'
 
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: [
-    './pages/**/*.{ts,tsx}',
+  presets: [require("@payloadcmsdirectory/shadcn-ui/tailwind-preset")],
+  content: ['./pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+    ...getShadcnContent(),
   ],
   darkMode: ['selector', '[data-theme="dark"]'],
   plugins: [tailwindcssAnimate, typography],

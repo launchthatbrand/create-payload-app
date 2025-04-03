@@ -1,0 +1,53 @@
+<!-- Only include minimal CSS variables required for theming -->
+<style>
+  /* Define CSS variables but don't include actual component styles */
+  :root {
+    /* Set only the essential variables and let Payload CSS handle the rest */
+    --theme-elevation-0: #fff;
+    --theme-elevation-50: #f9f9f9;
+    --theme-elevation-100: #f3f3f3;
+    --theme-elevation-150: #f0f0f0;
+    --theme-elevation-200: #e7e7e7;
+    --theme-elevation-300: #e5e5e5;
+    --theme-elevation-400: #d1d1d1;
+    --theme-elevation-500: #c5c5c5;
+    --theme-elevation-800: #9e9e9e;
+    --theme-elevation-1000: #333;
+
+    --theme-bg: #fff;
+    --theme-text: #0f0f0f;
+    --theme-input-bg: #fff;
+    --theme-border-color: #e8e8e8;
+    --theme-brand: #0066ff;
+    --theme-brand-hover: #0055ee;
+  }
+
+  /* Dark mode variables */
+  body.dark {
+    --theme-elevation-0: #1b1b1b;
+    --theme-elevation-50: #222222;
+    --theme-elevation-100: #272727;
+    --theme-elevation-150: #2c2c2c;
+    --theme-elevation-200: #313131;
+    --theme-elevation-300: #3f3f3f;
+    --theme-elevation-400: #575757;
+    --theme-elevation-500: #757575;
+    --theme-elevation-800: #a0a0a0;
+    --theme-elevation-1000: #e0e0e0;
+
+    --theme-bg: #1b1b1b;
+    --theme-text: #f0f0f0;
+    --theme-input-bg: #272727;
+    --theme-border-color: #3f3f3f;
+  }
+</style>
+
+<!-- This will be injected into the head of the Storybook iframe -->
+<script>
+  // Add any global variables or settings needed for components
+  window.PayloadConfig = {
+    routes: {
+      admin: '/admin',
+    },
+  }
+</script>
